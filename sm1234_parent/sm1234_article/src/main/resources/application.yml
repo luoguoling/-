@@ -1,0 +1,15 @@
+servlet:
+  port: 9001
+spring:
+  application:
+    name: sm1234-article
+  datasource:
+    url: jdbc:mysql://121.5.106.77:3306/docker?characterEncoding=UTF8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+
