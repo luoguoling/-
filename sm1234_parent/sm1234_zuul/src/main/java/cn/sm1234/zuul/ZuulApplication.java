@@ -1,15 +1,16 @@
-package cn.sm1234.article;
+package cn.sm1234.zuul;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 /**
- * 文章微服务
+ * 微服务网关
  */
 @SpringBootApplication
+@EnableZuulProxy
 @EnableEurekaClient
-public class ArticleApplication {
+public class ZuulApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ArticleApplication.class,args);
+        SpringApplication.run(ZuulApplication.class,args);
     }
 }
